@@ -3,8 +3,11 @@
 dbsqlite3
 dbsqlite3-journal
 __pycache__
+.pytest_cache
 *.pyc
 .venv
 .env
 staticfiles
 .ipynb_checkpoints/
+.vscode/
+.refs
