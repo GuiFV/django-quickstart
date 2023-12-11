@@ -10,4 +10,4 @@ __pycache__
 staticfiles
 .ipynb_checkpoints/
 .vscode/
-.refs
+refs
