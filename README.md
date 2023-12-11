@@ -32,7 +32,7 @@ django-admin startproject --template https://github.com/GuiFV/django-quickstart/
 pip3 install --prefer-binary -r requirements-dev.txt && \
 git init && \
 git add . && \
-git commit -m 'Initial import' && \
+git commit -m 'Initial import'
 ```
 ## Afterwards:
 
