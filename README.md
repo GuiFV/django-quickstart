@@ -8,6 +8,7 @@ This template includes:
 
 - .env setup with <a href="https://github.com/henriquebastos/python-decouple">Decouple</a>
 - Pytest and pytest-django
+- Docker and docker-compose base files
 - Static assets serving with dj-static (WSGI server)
 - <a href="https://django-jazzmin.readthedocs.io/">Jazzmin</a> for django admin template
 - <a href="https://django-extensions.readthedocs.io/en/latest/">Django extensions</a> for the cool `python manage.py shell_plus` environment
