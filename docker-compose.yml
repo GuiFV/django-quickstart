@@ -1,3 +1,4 @@
+# For local standalone
 version: '3.7'
 services:
   web:
@@ -9,3 +10,20 @@ services:
     ports:
       - "8000:8000"
       
+# For deployment with nginx orchestration, change the 'command:gunicorn' and 'expose:' to the respective port on nginx .conf file
+# More details at https://github.com/GuiFV/multiple_django_apps_nginx_orchestration
+
+#version: '3.7'
+#
+#services:
+#
+#  web:
+#    build: .
+#    env_file: .env
+#    command: gunicorn --workers 3 --bind 0.0.0.0:8000 --timeout 500 {{ project_name }}.wsgi:application
+#    volumes:
+#      - ./:/app
+#    expose:
+#      - 8000
+#    restart: unless-stopped
+#    network_mode: host
