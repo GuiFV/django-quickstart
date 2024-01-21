@@ -5,21 +5,19 @@
 Adjusted to better fit my initial setup
 
 This template includes:
-
 - .env setup with <a href="https://github.com/henriquebastos/python-decouple">Decouple</a>
 - Pytest and pytest-django
 - Docker and docker-compose base files
 - Static assets serving with dj-static (WSGI server)
 - <a href="https://django-jazzmin.readthedocs.io/">Jazzmin</a> for django admin template
-- <a href="https://django-extensions.readthedocs.io/en/latest/">Django extensions</a> for the cool `python manage.py shell_plus` environment
+- <a href="https://django-extensions.readthedocs.io/en/latest/">Django extensions</a> for `python manage.py shell_plus` environment
+- Quick deployment of multiple apps with SSL on AWS using Nginx (more details at https://github.com/GuiFV/multiple_django_apps_nginx_orchestration )  
 
 ## One liner:
-
 1. Copy and paste the code below in your terminal
 2. Hit 'Enter'
-3. Type in your project's name (no spaces or funny chars)
+3. Type in your project's name (only letters and numbers)
 4. Hit 'Enter'
-
 
 ```
 read PROJECT_NAME && \
@@ -35,8 +33,8 @@ git init && \
 git add . && \
 git commit -m 'Initial import'
 ```
-## Afterwards:
 
+## Afterwards:
 5. Change SECRET_KEY in .env (you can use https://djecrety.ir/)
 6. Create a repo
 7. Set it up locally using `git remote add origin https://github.com/YOURNAME/REPO_CREATED/`
