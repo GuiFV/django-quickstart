@@ -1,0 +1,30 @@
+[run]
+source =
+    {{ project_name }}
+
+parallel = True
+concurrency = multiprocessing
+relative_files = True
+
+omit =
+    *settings.py
+    */tests/*
+    */migrations/*
+    */urls.py
+    *__init__*
+    *wsgi.py
+    *manage.py
+    *apps.py
+    *env*
+    *storage.py
+    *asgi.py
+    */contrib/*
+    Dockerfile*
+    *celery.py
+
+[report]
+precision = 2
+show_missing = True
+skip_empty = True
+fail_under = 70
+ignore_errors = True
